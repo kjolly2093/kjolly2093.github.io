@@ -43,6 +43,7 @@ img {
     height: 100%;
 }
 
+
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
@@ -70,18 +71,19 @@ img {
 
 /* Banner */
 .banner {
-    height: 500px;
+    height: 400px;
     background-color: var(--primary-color);
     color: #fff;
     position: relative;
 }
 
 .banner h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .banner p {
     margin: 20px 0;
+    font-size: 1rem;
 }
 
 .banner .grid {
@@ -92,37 +94,52 @@ img {
 
 .banner-img {
     position: relative;
-    height: 400px;
-    width: 300px;
+    height: 250px;
+    width: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
+
+/* contact */
+.contact {
+    height: 500px;
+}
+
+.contact h1{
+    font-size: 35px;
+    color: var(--dark-color);
+    margin: 25px 0;
+}
+
+.contact p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact .grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-options {
     justify-self: center;
-    overflow: hidden;
 }
 
-/* Templates */
+/* .contact-card {
+        background-color: #fff;
+        width: 90%;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px black;
+        margin: 10px;
+} */
 
-.template {
-    height: 270px;
-    width: 200px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.2s ease-in;
-}
 
-.templates .container {
-    margin: 40px auto;
-}
-
-.templates .flex {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-
-.template:hover{
-    transform: translateY(-15px);
+.social a {
+    margin: 0 10px 0 0;
 }
 
 /* Footer */
@@ -140,59 +157,3 @@ img {
     border-bottom: 1px #fff solid;
 }
 
-/* Backgrounds & Buttons */
-
-.bg-dark {
-    background-color: var(--dark-color);
-    color: #fff;
-}
-
-.bg-dark a {
-    color: #fff;
-}
-
-/* Tablets */
-@media(max-width:768px){
-  .grid,
-  .banner .grid,
-  .footer .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .banner{
-    height: auto;
-  }
-
-  .banner-text {
-    text-align: center;
-    margin: 40px;
-  }
-
-  .banner-img {
-    margin: 40px auto;
-  }
-
-  .template:hover{
-    transform: scale(1.1);
-}
-
-}
-
-/* Mobile */
-
-@media(max-width:500px){
-    .navbar {
-        height: 110px;
-        font-size: 0.9rem;
-    }
-
-    .navbar .flex {
-        flex-direction: column;
-
-    }
-
-    .navbar ul {
-        padding: 1px;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-}
