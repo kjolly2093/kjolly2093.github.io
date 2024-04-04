@@ -1,89 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-:root {
-    --primary-color: #0277bd;
-    --dark-color: #002240;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-h1,
-h2 {
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 10px 0;
-}
-
-p {
-    margin: 10px 0;
-    font-weight: 500;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Navbar */
-.navbar {
-    background-color: var(--primary-color);
-    color: #fff;
-    height: 70px;
-}
-
-.navbar .flex {
-    justify-content: space-between;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
-}
-
-.navbar nav a:hover {
-    border-bottom: 2px #fff solid;
-}
-
 /* Banner */
 .banner {
-    height: 400px;
+    height: 500px;
     background-color: var(--primary-color);
     color: #fff;
     position: relative;
 }
 
 .banner h1 {
-    font-size: 35px;
+    font-size: 3em;
 }
 
 .banner p {
     margin: 20px 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.8em;
+    letter-spacing: 0.8px;
+    font-family: "Lato", sans-serif;
+}
+
+.banner a {
+    font-size: 1.5em;
 }
 
 .banner .grid {
@@ -94,8 +31,8 @@ img {
 
 .banner-img {
     position: relative;
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 370px;
     display: flex;
     /* justify-content: center;
     align-items: center; */
@@ -104,17 +41,23 @@ img {
 
 /* contact */
 .contact {
-    height: 500px;
+    height: 550px;
 }
 
 .contact h1{
-    font-size: 35px;
+    font-size: 3.5em;
     color: var(--dark-color);
-    margin: 25px 0;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 1.5em;
+    color: var(--dark-color);
+    margin: 15px 0;
 }
 
 .contact p {
-    margin: 20px 0;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -122,38 +65,25 @@ img {
 .contact .grid{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    align-items: start;
+}
+
+.location-map img {
+    border: 1px  solid none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
 }
 
 .contact-options {
     justify-self: center;
 }
 
-/* .contact-card {
-        background-color: #fff;
-        width: 90%;
-        color: #333;
-        border-radius: 10px;
-        box-shadow: 0px 1px 10px black;
-        margin: 10px;
-} */
+.contact-options p {
+    letter-spacing: 1px;
+}
 
-
-.social a {
+.contact-options .social a {
     margin: 0 10px 0 0;
 }
 
-/* Footer */
-
-.footer .social a {
-    margin: 0 10px 0 0;
-}
-
-.footer .grid div{
-    align-content: center;
-}
-
-.head-outline {
-    display: inline-block;
-    border-bottom: 1px #fff solid;
-}
 
